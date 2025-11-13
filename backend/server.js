@@ -4,6 +4,9 @@ require('dotenv').config();
 
 const mongoose = require('mongoose');
 
+// Suppress deprecated warnings
+mongoose.set('strictQuery', false);
+
 const authRoutes = require('./routes/auth');
 const userRoutes = require('./routes/users');
 const courseRoutes = require('./routes/courses');
@@ -16,7 +19,7 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 // Connect to MongoDB and start server
-mongoose.connect(process.env.MONGODB_URI || process.env.MONGO_URI, { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect(process.env.MONGODB_URI || process.env.MONGO_URI)
   .then(() => {
     console.log('MongoDB connected');
 
@@ -42,10 +45,6 @@ mongoose.connect(process.env.MONGODB_URI || process.env.MONGO_URI, { useNewUrlPa
     };
 
     app.use(cors(corsOptions));
-    
-    // Handle preflight requests explicitly
-    app.options('*', cors(corsOptions));
-    
     app.use(express.json());
 
     // Routes
