@@ -27,7 +27,7 @@ mongoose.connect(process.env.MONGODB_URI || process.env.MONGO_URI)
     const corsOptions = {
       origin: function (origin, callback) {
         const allowedOrigins = [
-          'https://victoe-and-sons.vercel.app',
+          'https://victor-and-sons.vercel.app',
           'http://localhost:3000',
           'http://localhost:5173'
         ];
