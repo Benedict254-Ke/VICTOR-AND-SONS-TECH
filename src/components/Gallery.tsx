@@ -4,13 +4,13 @@ export default function Gallery() {
   const stats = [
     {
       icon: Users,
-      value: '1000+',
+      value: '70,000+',
       label: 'Happy Clients',
       color: 'bg-blue-500'
     },
     {
       icon: Award,
-      value: '5000+',
+      value: '120,000+',
       label: 'Services Completed',
       color: 'bg-green-500'
     },
@@ -22,7 +22,7 @@ export default function Gallery() {
     },
     {
       icon: Image,
-      value: '6+',
+      value: '12+',
       label: 'Years Experience',
       color: 'bg-orange-500'
     }

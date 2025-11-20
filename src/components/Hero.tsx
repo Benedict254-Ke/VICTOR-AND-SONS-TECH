@@ -57,7 +57,7 @@ export default function Hero() {
               <div className="text-gray-600 font-medium">Success Rate</div>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-gray-100 mt-8">
-              <div className="text-4xl font-bold text-blue-600 mb-2">6+</div>
+              <div className="text-4xl font-bold text-blue-600 mb-2">12+</div>
               <div className="text-gray-600 font-medium">Years Excellence</div>
             </div>
             <div className="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300 border border-gray-100">
@@ -77,11 +77,11 @@ export default function Hero() {
             <div className="text-sm text-gray-600 mt-1">California, next to RIAT</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-gray-800">1000+</div>
+            <div className="text-3xl font-bold text-gray-800">70,000+</div>
             <div className="text-sm text-gray-600 mt-1">Happy Clients</div>
           </div>
           <div className="text-center">
-            <div className="text-3xl font-bold text-gray-800">5000+</div>
+            <div className="text-3xl font-bold text-gray-800">120,000+</div>
             <div className="text-sm text-gray-600 mt-1">Services Completed</div>
           </div>
           <div className="text-center">
